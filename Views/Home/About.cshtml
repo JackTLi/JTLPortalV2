@@ -1,25 +1,27 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<h2>@ViewBag.Title.</h2>
+<div class="contentWrapper">
+    <h2>@ViewBag.Title.</h2>
 
-<table>
-    <tr>
-        <td class="AboutMe" valign="top">
-            <p>
-                My name is Jack Li and I am currently a student at the University of Waterloo studying Computer Science (co-op) under the faculty of Mathematics.
-                I am an experienced young developer and student who is looking to pick up new technologies, with a keen interest in web and mobile development.
-            </p>
+    <table>
+        <tr>
+            <td class="AboutMe" valign="top">
+                <p>
+                    My name is Jack Li and I am currently a student at the University of Waterloo studying Computer Science (co-op) under the faculty of Mathematics.
+                    I am an experienced young developer and student who is looking to pick up new technologies, with a keen interest in web and mobile development.
+                </p>
 
-            <p>
-                I have worked on projects involving Connected Cars, web globalization, automated testing frameworks, and most recently, windows kernel graphics drivers. My employers have
-                described me as a motivated, bright and hard-working individual.
-            </p>
+                <p>
+                    I have worked on projects involving Connected Cars, web globalization, automated testing frameworks, and most recently, windows kernel graphics drivers. My employers have
+                    described me as a motivated, bright and hard-working individual.
+                </p>
 
-            <p>To find out more about what I have done, @Html.ActionLink("click here to view my online resume", "Resume", "Home").</p>
-        </td>
-        <td>
-            <img src="/Images/portrait.jpg" />
-        </td>
-    </tr>
-</table>
+                <p>To find out more about what I have done, @Html.ActionLink("click here to view my online resume", "Resume", "Home").</p>
+            </td>
+            <td>
+                <img src="/Images/portrait.jpg" />
+            </td>
+        </tr>
+    </table>
+</div>

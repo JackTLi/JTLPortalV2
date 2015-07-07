@@ -8,7 +8,7 @@
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
-<body>
+<body style="height:100%;">
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -21,7 +21,6 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Resume", "Resume", "Home")</li>
                     <li>@Html.ActionLink("Projects", "Projects", "Home")</li>
@@ -36,10 +35,8 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        <div class="content-wrapper">
+    <div class="body-content">
             @RenderBody()
-        </div>
         <hr />
         <footer>
             <p>Copyright &copy; @DateTime.Now.Year Jack Li</p>

@@ -5,8 +5,7 @@
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    height: 100vh;
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
@@ -72,20 +71,44 @@ footer {
 }
 
 .jumbotron {
+    margin:0;
+
     width: 100%;
+    height: calc(100% - 50px);
     background-image: url(/Images/bg2.png);
+
+
 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
 
-    position: absolute;
     left: 0;
+    top:0;
+    display:block;
+}
+
+
+
+.jumbotron .contentWrapper {
+    padding-top: 12%;
+    padding-left: 20px;
+}
+
+.jumbotron .contentWrapper h1 {
+    
+}
+
+.jumbotron .contentWrapper .buttons {
+    padding-top: 7%;
+}
+
+.contentWrapper {
+    width: 100%;max-width:1170px;margin-right:auto;margin-left:auto;
 }
 
 .carousel {
-      position: relative;
+  position: relative;
   height: 350px;
 }
 
@@ -93,4 +116,18 @@ footer {
       position: relative;
       overflow: hidden;
       width: 100%;
+}
+
+.indexPageBody {
+    height: 100%;
+}
+
+#technologiesused {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 500px;
+}
+
+#technologiesused tr {
+    height: 120px;
 }

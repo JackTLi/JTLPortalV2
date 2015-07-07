@@ -2,12 +2,38 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <div style="width: 100%;max-width:1170px;margin-right:auto;margin-left:auto;">
-        <h1>Welcome.</h1>
-        <p class="lead">Hi, my name is Jack Li, and this is my personal site.</p>
-        <p><a href="/home/about" class="btn btn-primary btn-large">About me &raquo;</a></p>
+<div class="indexPageBody">
+    <div class="jumbotron">
+        <div class="contentWrapper">
+            <h1>Welcome.</h1>
+            <p></p>
+            <h2>Hi, my name is Jack Li, and this is my personal site.</h2>
+            <p class="lead">
+                I am currently a third year student at the University of Waterloo studying Computer Science. <br /> I enjoy working with smart people who get things done, on software that matters.       
+            </p>
+            <p class="buttons"><a href="/home/about" class="btn btn-primary btn-large">About me &raquo;</a> <a href="/home/contact" class="btn btn-primary btn-large">Contact me &raquo;</a></p>
+        </div>
     </div>
 </div>
 
-<p style="height:325px;"></p>
+<div class="contentWrapper">
+    <h1>
+        This site is built and hosted using the following technologies:
+    </h1>
+    <p>
+        <table id="technologiesused">
+            <tr>
+                <td><img src="/Images/msdotnet.png" /></td>
+                <td>Microsoft ASP.NET MVC Framework</td>
+            </tr>
+            <tr>
+                <td><img src="/Images/winazure.png" /></td>
+                <td>Windows Azure Cloud Platform</td>
+            </tr>
+            <tr>
+                <td><img src="/Images/twbtstrp.png" /></td>
+                <td>Twitter Bootstrap</td>
+            </tr>
+        </table>
+    </p>
+</div>
