@@ -26,5 +26,15 @@ namespace JTLPortalV2.Controllers
 
             return View();
         }
+
+        public ActionResult Resume()
+        {
+            return View();
+        }
+
+        public ActionResult Projects()
+        {
+            return View();
+        }
     }
 }
