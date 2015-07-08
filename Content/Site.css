@@ -77,7 +77,7 @@ footer {
     height: calc(100% - 50px);
     background-image: url(/Images/bg2.png);
 
-
+    min-height: 600px;
 
     background-repeat: no-repeat;
     background-size: cover;
