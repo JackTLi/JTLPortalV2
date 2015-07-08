@@ -4,24 +4,39 @@
 <div class="contentWrapper">
     <h2>@ViewBag.Title.</h2>
 
-    <table>
-        <tr>
-            <td class="AboutMe" valign="top">
-                <p>
-                    My name is Jack Li and I am currently a student at the University of Waterloo studying Computer Science (co-op) under the faculty of Mathematics.
-                    I am an experienced young developer and student who is looking to pick up new technologies, with a keen interest in web and mobile development.
-                </p>
+    <div class="AboutMePortrait">
+        <img src="/Images/portrait.jpg" />
+    </div>
 
-                <p>
-                    I have worked on projects involving Connected Cars, web globalization, automated testing frameworks, and most recently, windows kernel graphics drivers. My employers have
-                    described me as a motivated, bright and hard-working individual.
-                </p>
+    <div class="AboutMe" valign="top">
+        <p>
+            My name is Jack Li and I am currently a third year student at the University of Waterloo studying Computer Science (co-op) under the faculty of Mathematics.
+            Through my co-op terms, I have been able to meet some really smart people and get involved some really exciting projects. 
+        </p>
+        <p>
+            My journey started with Handrock Software Inc, a web development company that my father founded as a side-project. I took on development projects for a few of the clientele: WineDiva, WineScores, and MyGolfGroup,
+            and discovered a love for web development. 
+        </p>
+        <p>
+            Soon after, I got an opportunity to work with Lixar IT as a Junior Developer for my first co-op term in Ottawa, Ontario for 4 months. I worked exclusively as a member of the Delphi Connected Car project,
+            a product that allows customers to turn their ordinary cars with OBD2 ports into "Smart Cars". During my time at Lixar, I developed a FTP Account Management feature
+            to allow clients to control the state of their user accounts by dropping files via FTP for the feature to process. Then, I worked extensively on the web portal to finish and deliver to our European and Chinese clients.
+        </p>
+        <p>
+            Then, I had a change of pace and took an opportunity to work as a Software Developer for International Medical Solutions(IMS), a small medical-imaging company based in Missisauga, Ontario. My role at IMS was to
+            extend the existing automated Testing and Build framework. During my time at IMS, I found many opportunities to improve the framework, and motivated me to perform a complete refactoring of the testing logic.
+            My optimizations were able to reduce the testing time of continuous tests from 3 hours to 1 hour, and full-testing from 14 hours to just 4.
+        </p>
 
-                <p>To find out more about what I have done, @Html.ActionLink("click here to view my online resume", "Resume", "Home").</p>
-            </td>
-            <td>
-                <img src="/Images/portrait.jpg" />
-            </td>
-        </tr>
-    </table>
+        <p>
+            Currently, I am working as a member of the Windows Kernel Mode Graphics Driver team at Advanced Micro Devices (AMD) to deliver
+            core features for Radeon, FirePro and APU products. 
+        </p>
+
+        <p>
+            Through each of my experiences, I have received only Excellent and Outstanding reviews from my supervisors. I am consistently described as a hard-working, motivated and talented software developer.
+        </p>
+
+        <p>To find out more about what I have done, @Html.ActionLink("click here to view my online resume", "Resume", "Home").</p>
+    </div>
 </div>

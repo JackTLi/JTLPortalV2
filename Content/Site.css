@@ -131,3 +131,14 @@ footer {
 #technologiesused tr {
     height: 120px;
 }
+
+@media screen and (min-width: 768px) {
+    .AboutMe {
+        width: 50%;
+    }
+
+    .AboutMePortrait {
+        float: right;
+        width: 30%;
+    }
+}
