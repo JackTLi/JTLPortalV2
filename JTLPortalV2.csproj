@@ -175,8 +175,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Images\bg1.jpg" />
-    <Content Include="Images\bg1.png" />
     <Content Include="Images\bg2.png" />
     <Content Include="Images\linkedin.png" />
     <Content Include="Images\logo.png" />
@@ -186,15 +184,13 @@
     <Content Include="Images\mkmtx4.jpg" />
     <Content Include="Images\mkmtx5.jpg" />
     <Content Include="Images\msdotnet.png" />
-    <Content Include="Images\portrait.jpg" />
+    <Content Include="Images\portrait.png" />
     <Content Include="Images\quadris1.jpg" />
     <Content Include="Images\quadris2.jpg" />
     <Content Include="Images\twbtstrp.png" />
     <Content Include="Images\winazure.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Images\logo.psd" />
-    <Content Include="Images\logoraw.psd" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
