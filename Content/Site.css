@@ -112,10 +112,8 @@ footer {
   height: 350px;
 }
 
-.carousel-inner {
-      position: relative;
-      overflow: hidden;
-      width: 100%;
+.carousel-inner .item img{
+      margin:auto;
 }
 
 .indexPageBody {
@@ -141,4 +139,21 @@ footer {
         float: right;
         width: 30%;
     }
+}
+
+.carousel-control.left, .carousel-control.right{ 
+    background: none !important; 
+}
+
+.carousel-control {
+    color: #165ba8 !important;
+}
+
+.carousel-indicators li {
+  background-color: #999;
+  background-color: rgba(70,70,70,.25);
+}
+
+.carousel-indicators .active {
+  background-color: #165ba8;
 }
