@@ -52,3 +52,4 @@ C:\Users\Jack\Documents\Visual Studio 2013\Projects\JTLPortalV2\JTLPortalV2\bin\
 C:\Users\Jack\Documents\Visual Studio 2013\Projects\JTLPortalV2\JTLPortalV2\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Jack\Documents\Visual Studio 2013\Projects\JTLPortalV2\JTLPortalV2\obj\Debug\JTLPortalV2.dll
 C:\Users\Jack\Documents\Visual Studio 2013\Projects\JTLPortalV2\JTLPortalV2\obj\Debug\JTLPortalV2.pdb
+C:\Users\Jack\documents\visual studio 2013\Projects\JTLPortalV2\JTLPortalV2\obj\Debug\JTLPortalV2.csprojResolveAssemblyReference.cache
