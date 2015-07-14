@@ -1,17 +1,33 @@
-﻿@{
+﻿@model JTLPortalV2.Models.EmailInfoModel
+@{
     ViewBag.Title = "Contact";
 }
 <div class="contentWrapper">
     <h2>@ViewBag.Title.</h2>
 
-    <a id="foxyform_embed_link_639420" href="./"></a>
+   <p>Thank you for your visit, feel free to drop a message </p> 
 
-    <script type="text/javascript">
-        (function (d, t) {
-            var g = d.createElement(t),
-                s = d.getElementsByTagName(t)[0];
-            g.src = "http://www.foxyform.com/js.php?id=639420&sec_hash=af25d1a2106&width=350px";
-            s.parentNode.insertBefore(g, s);
-        }(document, "script"));
-    </script>
+    @using (Html.BeginForm("SendForm","Home", FormMethod.Post, new { @class="form-horizontal",role="form",style="padding-top:30px;" }))
+    { 
+            <div class="form-group">
+                
+                @Html.LabelFor(model => model.Email, "Email:", new { @class="control-label col-sm-2"})
+                <div class="col-sm-10">
+                    @Html.TextBoxFor(model => model.Email, new { @class="form-control",placeholder="Enter Email",type="email",required="required"})
+                </div> 
+                
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.Message, "Message:", new { @class = "control-label col-sm-2" })
+                <div class="col-sm-10"> 
+                    @Html.TextAreaFor(model => model.Message, new { @class = "form-control", placeholder = "Hi my name is...",required="required" })       
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                     <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </div>
+    }
 </div>

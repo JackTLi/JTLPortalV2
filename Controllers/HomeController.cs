@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using JTLPortalV2.Models;
+using System.Net.Mail;
+using System.Text;
+using System.Net;
+using Microsoft.Azure;
 
 namespace JTLPortalV2.Controllers
 {
@@ -15,16 +20,48 @@ namespace JTLPortalV2.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            EmailInfoModel emailInfo = new EmailInfoModel();
+            return View(emailInfo);
+            
+        }
 
-            return View();
+        public ActionResult SendForm(EmailInfoModel emailInfo)
+        {
+            try
+            {
+                MailMessage msg = new MailMessage(CloudConfigurationManager.GetSetting("EmailAddr"), emailInfo.Email);
+                var smtp = new SmtpClient("smtp.gmail.com", 587)
+                {
+
+                    Credentials = new NetworkCredential(CloudConfigurationManager.GetSetting("EmailAddr"), CloudConfigurationManager.GetSetting("EmailKey")),
+                    EnableSsl = true
+                };
+
+                StringBuilder sb = new StringBuilder();
+                msg.To.Add(emailInfo.Email.ToString());
+                msg.Subject = "Contact Us";
+                msg.IsBodyHtml = false;
+
+                sb.Append(Environment.NewLine);
+                sb.Append("Email: " + emailInfo.Email);
+                sb.Append(Environment.NewLine);
+                sb.Append("Message: " + emailInfo.Message);
+
+                msg.Body = sb.ToString();
+
+                smtp.Send(msg);
+                msg.Dispose();
+                return RedirectToAction("Contact", "Home");
+            }
+            catch (Exception)
+            {
+                return View("Error");
+            }   
         }
 
         public ActionResult Resume()

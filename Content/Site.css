@@ -150,6 +150,15 @@ footer {
   background-color: #165ba8;
 }
 
+.btn-default {
+    background-color: #165ba8;
+    border:none;
+}
+.btn-default:hover {
+    background-color: #2876CD;
+}
+
+
 
 @media screen and (min-width: 768px) {
     .AboutMe {
