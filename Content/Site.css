@@ -75,7 +75,8 @@ footer {
 
     width: 100%;
     height: calc(100% - 50px);
-    background-image: url(/Images/bg2.png);
+    background-image: url(/Images/45.jpg);
+    background-attachment: fixed;
 
     min-height: 600px;
 
@@ -93,6 +94,7 @@ footer {
 .jumbotron .contentWrapper {
     padding-top: 12%;
     padding-left: 20px;
+    color:#fff;
 }
 
 .jumbotron .contentWrapper h1 {
