@@ -34,7 +34,7 @@ namespace JTLPortalV2.Controllers
         {
             try
             {
-                MailMessage msg = new MailMessage(CloudConfigurationManager.GetSetting("EmailAddr"), emailInfo.Email);
+                MailMessage msg = new MailMessage(CloudConfigurationManager.GetSetting("EmailAddr"), "jack.teng.li@gmail.com");
                 var smtp = new SmtpClient("smtp.gmail.com", 587)
                 {
 
@@ -43,7 +43,7 @@ namespace JTLPortalV2.Controllers
                 };
 
                 StringBuilder sb = new StringBuilder();
-                msg.To.Add(emailInfo.Email.ToString());
+                msg.To.Add("jack.teng.li@gmail.com");
                 msg.Subject = "Contact Us";
                 msg.IsBodyHtml = false;
 
