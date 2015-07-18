@@ -181,6 +181,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Images\45.jpg" />
     <Content Include="Images\bg2.png" />
+    <Content Include="Images\jtlsite1.jpg" />
+    <Content Include="Images\jtlsite2.jpg" />
     <Content Include="Images\linkedin.png" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\mkmtx1.jpg" />
