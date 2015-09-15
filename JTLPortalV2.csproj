@@ -183,6 +183,7 @@
     <Content Include="Images\20.jpg" />
     <Content Include="Images\45.jpg" />
     <Content Include="Images\bg2.png" />
+    <Content Include="Images\github.png" />
     <Content Include="Images\jtlsite1.jpg" />
     <Content Include="Images\jtlsite2.jpg" />
     <Content Include="Images\linkedin.png" />
