@@ -129,11 +129,15 @@ footer {
 #technologiesused {
     margin-top: 40px;
     width: 100%;
-    max-width: 500px;
+   text-align:center;
 }
 
 #technologiesused tr {
-    height: 120px;
+    height: 80px;
+}
+
+#technologiesused tr td {
+    width: 33%;
 }
 
 .carousel-control.left, .carousel-control.right{ 

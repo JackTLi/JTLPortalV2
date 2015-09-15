@@ -197,7 +197,9 @@
     <Content Include="Images\quadris1.jpg" />
     <Content Include="Images\quadris2.jpg" />
     <Content Include="Images\twbtstrp.png" />
+    <Content Include="Images\twitter.png" />
     <Content Include="Images\winazure.png" />
+    <Content Include="Images\winazureMIN.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
